@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+}
+section {
+	position: relative;
+	background: grey;
+	border: 1px solid black ;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-family: arial ;
+}
+section div{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 90px;
+	height: 20px;
+	text-align: center;
+	background-color:pink ;
+	border: 1px solid black ;
+}
+p{
+	padding:10px;
+}
+.row{
+	width: 100%;
+}
+@media (min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width: 32%;
+		margin-right: 10px !important;
+		height: 150px !important;
+	}
+	.fake {
+    margin-left: 13px !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		float: left;
+		width: 48%;
+		margin-right: 10px !important
+	}
+	.col-md-12{
+		width: 100% ;
+		float:right;
+	}
+}
+@media (max-width: 767px){
+	.col-s-12{
+		width: 100% ;
+		float: right;
+	}
+}
